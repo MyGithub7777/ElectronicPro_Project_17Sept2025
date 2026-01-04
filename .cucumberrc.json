@@ -1,0 +1,13 @@
+
+{
+  "default": {
+    "require": ["src/steps/**/*.ts", "src/support/**/*.ts"],
+    "requireModule": ["ts-node/register"],
+    "paths": ["src/features/**/*.feature"],
+    "format": ["progress", "pretty","json:reports/cucumber_report.json","html:reports/cucumber_report.html" ],
+    "tags": "",
+    "publish": true,
+    "dryRun": false,
+    "timeout": 60000
+  }
+}
